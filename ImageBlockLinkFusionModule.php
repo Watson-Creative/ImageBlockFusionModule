@@ -4,7 +4,7 @@
    Plugin URI: https://github.com/Watson-Creative/ImageBlockFusionModule
    GitHub Plugin URI: https://github.com/Watson-Creative/ImageBlockFusionModule
    description: Add module to Fusion Builder to embed gravity forms in posts
-   Version: 1.0.0
+   Version: 1.0.1
    Author: Alex Tryon
    Author URI: http://www.alextryonpdx.com
    License: GPL2
