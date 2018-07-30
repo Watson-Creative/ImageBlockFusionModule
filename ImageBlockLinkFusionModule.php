@@ -52,7 +52,7 @@ function fusion_element_image_link_block() {
           'type'        => 'link_selector',
           'heading'     => esc_attr__( 'Link', 'fusion-builder' ),
           'description' => esc_attr__( 'Select link', 'fusion-builder' ),
-          'param_name'  => 'url',
+          'param_name'  => 'link_url',
           'value'       => '',),
         array(
           'type'        => 'textfield',
