@@ -115,9 +115,7 @@ function image_link( $atts, $content = null ){
         }
         </style>';
     $block = '<div class="image-overlay-link" style="height:' . $a["height"] . '; background-image:url(' . $a["background_image"] . '")>
-      <a style="color:' . $a['link_color'] . '" id="' . $id . '" class="block-overlay" href="' . $a['link_url'] . '">' . $content . '</a></div>';
-
-    $block .= $styles;
+      <a style="color:' . $a['link_color'] . '" id="' . $id . '" class="block-overlay" href="' . $a['link_url'] . '">' . $content . '</a>' .$styles . '</div>';
     return $block;
 }
 add_shortcode('imagelink', 'image_link');
