@@ -140,20 +140,20 @@ add_shortcode('imagelink', 'image_link');
 //     display: table-cell;
 //     vertical-align: middle;
 // }
-// .image-overlay-link  { 
+// .image-overlay-link a { 
 //   padding:;
 //   background-color:transparent;
 //   height: 200px;
 
 // }
-// .image-overlay-link a {
-//     color: #edebe1;
+// .image-overlay-link a *{
+//     color: ;
 //     opacity: 0;
 // }
-// .image-overlay-link:hover { 
+// .image-overlay-link:hover a { 
 //   background-color: rgba(0,0,0,.4);
 // }
-// .image-overlay-link:hover a {
+// .image-overlay-link:hover a *{
 //     opacity: 1;
 // }
 
