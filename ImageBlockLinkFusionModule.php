@@ -4,7 +4,7 @@
    Plugin URI: https://github.com/Watson-Creative/ImageBlockFusionModule
    GitHub Plugin URI: https://github.com/Watson-Creative/ImageBlockFusionModule
    description: Add module to Fusion Builder to embed gravity forms in posts
-   Version: 1.0.1
+   Version: 1.0.2
    Author: Alex Tryon
    Author URI: http://www.alextryonpdx.com
    License: GPL2
@@ -114,7 +114,7 @@ function image_link( $atts, $content = null ){
           background-color: ' . $a["overlay_color_hover"] . ';
         }
         </style>';
-    $block = '<div class="image-overlay-link" style="height:' . $a["height"] . '; background-image:url(' . $a["background_image"] . '")>
+    $block = '<div class="image-overlay-link" style="height:' . $a["height"] . '; background-image:url(' . $a["background_image"] . ')">
       <a style="color:' . $a['link_color'] . '" id="' . $id . '" class="block-overlay" href="' . $a['link_url'] . '">' . $content . '</a>' .$styles . '</div>';
     return $block;
 }
@@ -124,7 +124,38 @@ add_shortcode('imagelink', 'image_link');
 
 
 
+// /* image overlay defaults to be set per project */
+// .image-overlay-link {
+//     width: 100%;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     display:table;
+// }
+// .block-overlay {
+//     height: 100%;
+//     width: 100%;
+//     padding:20px;
+//     transition: 400ms all;
+//     display: table-cell;
+//     vertical-align: middle;
+// }
+// .image-overlay-link  { 
+//   padding:;
+//   background-color:transparent;
+//   height: 200px;
 
+// }
+// .image-overlay-link a {
+//     color: #edebe1;
+//     opacity: 0;
+// }
+// .image-overlay-link:hover { 
+//   background-color: rgba(0,0,0,.4);
+// }
+// .image-overlay-link:hover a {
+//     opacity: 1;
+// }
 
 
 
